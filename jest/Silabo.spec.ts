@@ -1,5 +1,5 @@
 import * from "jest";
-import {Silabo} from "./Silabo";
+import {Silabo} from "../src/Silabo";
 
 describe("Bazaj testoj de silaboj", () {
   it("sukcesas per pravaj silaboj", () => {

@@ -24,4 +24,17 @@ export class Silabo {
 
     return new Silabo(komenco, vokalo, glisado, fino);
   }
+
+  public static konsonantoLarĝeco(kvanto: number, bazo: number): number {
+    if (kvanto <= 1) {
+      return bazo - 20;
+    } else {
+      return bazo - 30;
+    }
+  }
+
+  public static konsonantojLarĝeco(kvanto: number, unuaLarĝeco: number): number {
+    if (kvanto <= 1) return unuaLarĝeco;
+    return unuaLarĝeco * kvanto + (kvanto - 1) * 10;
+  }
 }
